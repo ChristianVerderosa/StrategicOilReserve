@@ -113,11 +113,12 @@ img { max-width: 100%; display: block; }
   gap: 36px;
 }
 
-.nav-brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
-.nav-brand-line {
-  width: 3px;
-  height: 28px;
-  background: var(--red);
+.nav-brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.nav-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 .nav-name {
