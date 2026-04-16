@@ -650,6 +650,11 @@ img { max-width: 100%; display: block; }
   color: var(--red);
   border: 1px solid rgba(192, 57, 43, 0.3);
 }
+.status-progress {
+  background: rgba(217, 119, 6, 0.15);
+  color: #f59e0b;
+  border: 1px solid rgba(217, 119, 6, 0.35);
+}
 .status-pending {
   background: rgba(107, 107, 107, 0.1);
   color: var(--text-dim);

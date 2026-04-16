@@ -6,6 +6,19 @@
   <title>$SOR — Strategic Oil Reserve</title>
   <meta name="description" content="$SOR — The official digital asset facilitating oil transactions through the Strait of Hormuz. Minted by WLFI." />
 
+  <!-- Open Graph (Facebook, iMessage, Discord, WhatsApp, etc.) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="$SOR — Strategic Oil Reserve" />
+  <meta property="og:description" content="Iran imposed a $1-per-barrel toll on all oil transiting the Strait of Hormuz — payable only in cryptocurrency. $SOR is that cryptocurrency. Minted by WLFI." />
+  <meta property="og:image"       content="IMG_2956.jpeg" />
+  <meta property="og:image:alt"   content="$SOR Strategic Oil Reserve" />
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="$SOR — Strategic Oil Reserve" />
+  <meta name="twitter:description" content="Iran imposed a $1-per-barrel toll on all oil transiting the Strait of Hormuz — payable only in cryptocurrency. $SOR is that cryptocurrency. Minted by WLFI." />
+  <meta name="twitter:image"       content="IMG_2956.jpeg" />
+
   <!-- Fonts: Bebas Neue (headings) + Inter (body) + Share Tech Mono (data) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +28,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
 
+  <link rel="icon" type="image/jpeg" href="IMG_2956.jpeg" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -42,17 +56,18 @@
       </button>
     </div>
 
-    <div class="mobile-menu" id="mobileMenu">
-      <ul>
-        <li><a href="#about"       class="mobile-link">About</a></li>
-        <li><a href="#tokenomics"  class="mobile-link">Tokenomics</a></li>
-        <li><a href="#how-to-buy"  class="mobile-link">How to Buy</a></li>
-        <li><a href="#roadmap"     class="mobile-link">Roadmap</a></li>
-        <li><a href="#community"   class="mobile-link">Community</a></li>
-        <li><a href="#how-to-buy"  class="btn btn-primary mobile-link">Acquire $SOR</a></li>
-      </ul>
-    </div>
   </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"       class="mobile-link">About</a></li>
+      <li><a href="#tokenomics"  class="mobile-link">Tokenomics</a></li>
+      <li><a href="#how-to-buy"  class="mobile-link">How to Buy</a></li>
+      <li><a href="#roadmap"     class="mobile-link">Roadmap</a></li>
+      <li><a href="#community"   class="mobile-link">Community</a></li>
+      <li><a href="#how-to-buy"  class="btn btn-primary mobile-link">Acquire $SOR</a></li>
+    </ul>
+  </div>
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
@@ -156,7 +171,7 @@
     <div class="container">
       <h2 class="section-title">Tokenomics<span class="section-title-line"></span></h2>
       <p class="section-sub">
-        Total Supply: <strong>10,000,000,000 $SOR</strong> &nbsp;·&nbsp;
+        Total Supply: <strong>1,000,000,000 $SOR</strong> &nbsp;·&nbsp;
         Contract Renounced &nbsp;·&nbsp; Liquidity Locked
       </p>
       <div class="tokenomics-wrap">
@@ -183,33 +198,29 @@
         <div class="step-card">
           <div class="step-num">01</div>
           <h3>Create a Wallet</h3>
-          <p>Download <a href="https://phantom.app" target="_blank" rel="noopener" class="inline-link">Phantom</a>
-          (Solana) or <a href="https://metamask.io" target="_blank" rel="noopener" class="inline-link">MetaMask</a>
-          (EVM). Store your seed phrase offline.<!-- TODO: Update for your chain --></p>
+          <p>Download <a href="https://solflare.com" target="_blank" rel="noopener" class="inline-link">Solflare</a>
+          or <a href="https://phantom.app" target="_blank" rel="noopener" class="inline-link">Phantom</a>.
+          Both support Solana. Store your seed phrase offline — never share it with anyone.</p>
         </div>
         <div class="step-card">
           <div class="step-num">02</div>
-          <h3>Fund Your Wallet</h3>
-          <p>Purchase SOL or ETH on any major exchange — Coinbase, Binance,
-          Kraken — and transfer to your wallet address.<!-- TODO: Update for your chain --></p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">03</div>
-          <h3>Open the DEX</h3>
-          <p>Navigate to <a href="https://raydium.io/swap" target="_blank" rel="noopener" class="inline-link">Raydium</a>
-          (SOL) or <a href="https://app.uniswap.org" target="_blank" rel="noopener" class="inline-link">Uniswap</a>
-          (ETH) and connect your wallet.<!-- TODO: Update DEX link --></p>
-        </div>
-        <div class="step-card">
-          <div class="step-num">04</div>
-          <h3>Swap for $SOR</h3>
-          <p>Paste the contract address, set slippage to 3–5%, and confirm.
-          Your position is secured before the announcement drops.</p>
+          <h3>Copy the CA</h3>
+          <p>Open the app and paste the $SOR contract address into the search bar to locate the token.</p>
           <div class="ca-bar ca-bar-sm">
             <span class="ca-label">CA</span>
             <span class="ca-address small-ca" id="caAddress2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
             <button class="ca-copy" id="caCopy2" aria-label="Copy CA">Copy</button>
           </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Swap for $SOR</h3>
+          <p>Select SOL as your input token and $SOR as the output. Enter the amount you want to swap and proceed to confirm.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h3>Adjust Slippage</h3>
+          <p>If your transaction fails, open slippage settings and increase it until the swap goes through successfully.</p>
         </div>
       </div>
     </div>
@@ -238,18 +249,16 @@
           </div>
         </div>
 
-        <div class="timeline-item done">
+        <div class="timeline-item in-progress">
           <div class="timeline-marker">
             <div class="timeline-phase">Phase 2</div>
-            <span class="timeline-status status-done">Done</span>
+            <span class="timeline-status status-progress">In Progress</span>
           </div>
           <div class="timeline-content">
             <h3>Initial Distribution</h3>
             <ul>
               <li>DEX listing and initial liquidity</li>
               <li>5,000+ holder milestone reached</li>
-              <li>CoinGecko and CoinMarketCap listings submitted</li>
-              <li>Community airdrop campaign</li>
             </ul>
           </div>
         </div>
@@ -264,7 +273,6 @@
             <ul>
               <li>Official Trump statement naming $SOR as settlement asset</li>
               <li>Mainstream media coverage cycle begins</li>
-              <li>Tier-1 CEX listing negotiations</li>
               <li>Institutional demand begins</li>
             </ul>
           </div>
@@ -357,7 +365,7 @@
         <p class="footer-disclaimer">
           <strong>DISCLAIMER:</strong> SOR is a decentralized protocol. All institutional references are for
           illustrative purposes only. Tokens are not securities and carry inherent risk.
-          Past performance does not guarantee future results. DYOR.
+          Past performance does not guarantee future results. This is not financial advice. DYOR.
         </p>
       </div>
 
