@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$SOR — Strategic Oil Reserve</title>
+  <meta name="description" content="$SOR — The official digital asset facilitating oil transactions through the Strait of Hormuz. Minted by WLFI." />
+
+  <!-- Fonts: Bebas Neue (headings) + Inter (body) + Share Tech Mono (data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#hero">
+        <div class="nav-brand-line"></div>
+        <span class="nav-name">$SOR</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#how-to-buy">How to Buy</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+
+      <a class="btn btn-primary nav-cta" href="#how-to-buy">Acquire $SOR</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about"       class="mobile-link">About</a></li>
+        <li><a href="#tokenomics"  class="mobile-link">Tokenomics</a></li>
+        <li><a href="#how-to-buy"  class="mobile-link">How to Buy</a></li>
+        <li><a href="#roadmap"     class="mobile-link">Roadmap</a></li>
+        <li><a href="#community"   class="mobile-link">Community</a></li>
+        <li><a href="#how-to-buy"  class="btn btn-primary mobile-link">Acquire $SOR</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+
+    <video id="heroVideo" class="hero-media" autoplay muted playsinline>
+      <source src="her.mp4" type="video/mp4" />
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="hero-eyebrow-line"></span>
+        Minted by WLFI &nbsp;·&nbsp; Strait of Hormuz
+      </div>
+
+      <h1 class="hero-title">
+        Strategic<br />
+        Oil<br />
+        <em>Reserve.</em>
+      </h1>
+
+      <p class="hero-sub">
+        Iran has imposed a $1-per-barrel toll on all oil transiting
+        the Strait of Hormuz — payable only in cryptocurrency.
+        $SOR is that cryptocurrency.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#how-to-buy">Acquire $SOR</a>
+        <a class="btn btn-outline" href="#" target="_blank" rel="noopener">View Chart</a><!-- TODO: Add DEX chart link -->
+      </div>
+
+      <div class="ca-bar">
+        <span class="ca-label">Contract</span>
+        <span class="ca-address" id="caAddress">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span><!-- TODO: Replace with real CA -->
+        <button class="ca-copy" id="caCopy" aria-label="Copy contract address">Copy</button>
+        <span class="ca-copied" id="caCopied">Copied</span>
+      </div>
+    </div>
+
+    <a class="scroll-arrow" href="#about" aria-label="Scroll down">&#8595;</a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">What is $SOR<span class="section-title-line"></span></h2>
+      <p class="section-sub">
+        The world's most critical energy chokepoint now runs on crypto.
+        <strong>$SOR is the settlement layer.</strong>
+      </p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-eyebrow">The Toll</div>
+          <h3>$1 Per Barrel. Payable in Crypto.</h3>
+          <p>Iran has mandated that all oil transiting the Strait of Hormuz
+          pay a $1-per-barrel toll — and that payment must be made in
+          cryptocurrency. $SOR is the designated asset for this settlement.</p>
+        </div>
+        <div class="card">
+          <div class="card-eyebrow">The Mint</div>
+          <h3>Issued by World Liberty Financial</h3>
+          <p>$SOR was minted by WLFI — Trump's private crypto company —
+          giving it direct institutional backing and a clear path to
+          recognition at the highest levels of government.</p>
+        </div>
+        <div class="card">
+          <div class="card-eyebrow">The Scale</div>
+          <h3>$21 Million in Daily Transactions</h3>
+          <p>21 million barrels of oil pass through Hormuz every single day.
+          At $1 per barrel, that is $21,000,000 worth of $SOR
+          transactions flowing through one chokepoint — daily.</p>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">21M</div>
+          <div class="stat-label">Barrels / Day Transit</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">$21M</div>
+          <div class="stat-label">Daily $SOR Volume</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20%</div>
+          <div class="stat-label">of Global Oil Supply</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">WLFI</div>
+          <div class="stat-label">Minting Authority</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOKENOMICS ===== -->
+  <section class="section section-dark" id="tokenomics">
+    <div class="container">
+      <h2 class="section-title">Tokenomics<span class="section-title-line"></span></h2>
+      <p class="section-sub">
+        Total Supply: <strong>10,000,000,000 $SOR</strong> &nbsp;·&nbsp;
+        Contract Renounced &nbsp;·&nbsp; Liquidity Locked
+      </p>
+      <div class="tokenomics-wrap">
+        <div class="chart-wrap">
+          <canvas id="tokenomicsChart"></canvas>
+          <div class="chart-center-label">
+            <div class="chart-center-num">10B</div>
+            <div class="chart-center-sub">$SOR</div>
+          </div>
+        </div>
+        <div class="token-legend" id="tokenLegend">
+          <!-- Populated by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO BUY ===== -->
+  <section class="section" id="how-to-buy">
+    <div class="container">
+      <h2 class="section-title">How to Acquire<span class="section-title-line"></span></h2>
+      <p class="section-sub">Position before the announcement. Four steps.</p>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Create a Wallet</h3>
+          <p>Download <a href="https://phantom.app" target="_blank" rel="noopener" class="inline-link">Phantom</a>
+          (Solana) or <a href="https://metamask.io" target="_blank" rel="noopener" class="inline-link">MetaMask</a>
+          (EVM). Store your seed phrase offline.<!-- TODO: Update for your chain --></p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Fund Your Wallet</h3>
+          <p>Purchase SOL or ETH on any major exchange — Coinbase, Binance,
+          Kraken — and transfer to your wallet address.<!-- TODO: Update for your chain --></p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Open the DEX</h3>
+          <p>Navigate to <a href="https://raydium.io/swap" target="_blank" rel="noopener" class="inline-link">Raydium</a>
+          (SOL) or <a href="https://app.uniswap.org" target="_blank" rel="noopener" class="inline-link">Uniswap</a>
+          (ETH) and connect your wallet.<!-- TODO: Update DEX link --></p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h3>Swap for $SOR</h3>
+          <p>Paste the contract address, set slippage to 3–5%, and confirm.
+          Your position is secured before the announcement drops.</p>
+          <div class="ca-bar ca-bar-sm">
+            <span class="ca-label">CA</span>
+            <span class="ca-address small-ca" id="caAddress2">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+            <button class="ca-copy" id="caCopy2" aria-label="Copy CA">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROADMAP ===== -->
+  <section class="section section-dark" id="roadmap">
+    <div class="container">
+      <h2 class="section-title">Roadmap<span class="section-title-line"></span></h2>
+      <p class="section-sub">The sequence of events already in motion.</p>
+      <div class="timeline">
+
+        <div class="timeline-item done">
+          <div class="timeline-marker">
+            <div class="timeline-phase">Phase 1</div>
+            <span class="timeline-status status-done">Done</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Deployment</h3>
+            <ul>
+              <li>$SOR token minted via WLFI infrastructure</li>
+              <li>Smart contract audited and renounced</li>
+              <li>Liquidity locked — permanent</li>
+              <li>Website and community channels launched</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item done">
+          <div class="timeline-marker">
+            <div class="timeline-phase">Phase 2</div>
+            <span class="timeline-status status-done">Done</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Initial Distribution</h3>
+            <ul>
+              <li>DEX listing and initial liquidity</li>
+              <li>5,000+ holder milestone reached</li>
+              <li>CoinGecko and CoinMarketCap listings submitted</li>
+              <li>Community airdrop campaign</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-phase">Phase 3</div>
+            <span class="timeline-status status-pending">Imminent</span>
+          </div>
+          <div class="timeline-content">
+            <h3>The Announcement<!-- TODO: Add [X DATE] when known --></h3>
+            <ul>
+              <li>Official Trump statement naming $SOR as settlement asset</li>
+              <li>Mainstream media coverage cycle begins</li>
+              <li>Tier-1 CEX listing negotiations</li>
+              <li>Institutional demand begins</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker">
+            <div class="timeline-phase">Phase 4</div>
+            <span class="timeline-status status-pending">Inevitable</span>
+          </div>
+          <div class="timeline-content">
+            <h3>Global Settlement Standard</h3>
+            <ul>
+              <li>Daily oil transaction settlements processed in $SOR</li>
+              <li>Multi-nation sovereign reserve allocations</li>
+              <li>$SOR governance framework launched</li>
+              <li>Recognition as a strategic reserve asset class</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMMUNITY ===== -->
+  <section class="section" id="community">
+    <div class="container">
+      <h2 class="section-title">Community<span class="section-title-line"></span></h2>
+      <p class="section-sub">
+        $SOR exists because the world's energy supply now intersects with decentralised finance.
+        Be part of what happens next.
+      </p>
+      <div class="socials-grid">
+
+        <a class="social-card" href="#" target="_blank" rel="noopener"><!-- TODO: Add Twitter link -->
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <span class="social-name">Twitter / X</span>
+          <span class="social-handle">@SORToken</span><!-- TODO: Update handle -->
+        </a>
+
+        <a class="social-card" href="#" target="_blank" rel="noopener"><!-- TODO: Add Telegram link -->
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </div>
+          <span class="social-name">Telegram</span>
+          <span class="social-handle">t.me/SORToken</span><!-- TODO: Update handle -->
+        </a>
+
+        <a class="social-card" href="#" target="_blank" rel="noopener"><!-- TODO: Add DexScreener link -->
+          <div class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M3 3h18v2H3zm0 4h18v2H3zm0 4h12v2H3zm0 4h18v2H3zm0 4h12v2H3z"/></svg>
+          </div>
+          <span class="social-name">DexScreener</span>
+          <span class="social-handle">Live Chart</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="nav-name">$SOR</div>
+          <p>Strategic Oil Reserve. The official digital asset
+          facilitating oil transactions through the Strait of Hormuz.
+          Minted by WLFI.</p>
+        </div>
+        <div class="footer-links-col">
+          <a href="#" target="_blank" rel="noopener">Twitter</a><!-- TODO: Add link -->
+          <a href="#" target="_blank" rel="noopener">Telegram</a><!-- TODO: Add link -->
+          <a href="#" target="_blank" rel="noopener">DexScreener</a><!-- TODO: Add link -->
+        </div>
+      </div>
+
+      <div class="footer-ca">
+        <span class="ca-label">Contract Address</span>
+        <span class="ca-address" id="caAddress3">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span><!-- TODO: Replace CA -->
+        <button class="ca-copy" id="caCopy3" aria-label="Copy CA">Copy</button>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-disclaimer-box">
+        <p class="footer-disclaimer">
+          <strong>DISCLAIMER:</strong> SOR is a decentralized protocol. All institutional references are for
+          illustrative purposes only. Tokens are not securities and carry inherent risk.
+          Past performance does not guarantee future results. DYOR.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 Strategic Oil Reserve — $SOR. All rights reserved.</p>
+        <p class="footer-copy">26°33'N &nbsp;56°15'E &nbsp;— Strait of Hormuz</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/animation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
