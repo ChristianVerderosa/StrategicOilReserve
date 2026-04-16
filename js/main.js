@@ -12,11 +12,9 @@ const CONTRACT_ADDRESS = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
    Tokenomics — edit percentages and labels here
    ================================================================ */
 const TOKENOMICS = [
-  { label: 'Transaction Reserve Fund', pct: 40, color: '#c0392b' },
+  { label: 'Transaction Reserve Fund', pct: 60, color: '#c0392b' },
   { label: 'Liquidity Pool',           pct: 25, color: '#e74c3c' },
   { label: 'Development & Ops',        pct: 15, color: '#4b4b4b' },
-  { label: 'Marketing',                pct: 12, color: '#666666' },
-  { label: 'Community Rewards',        pct:  8, color: '#2e2e2e' },
 ];
 /* ================================================================ */
 
