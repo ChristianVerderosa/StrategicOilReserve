@@ -14,7 +14,7 @@ const CONTRACT_ADDRESS = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 const TOKENOMICS = [
   { label: 'Transaction Reserve Fund', pct: 60, color: '#c0392b' },
   { label: 'Liquidity Pool',           pct: 25, color: '#e74c3c' },
-  { label: 'Development & Ops',        pct: 15, color: '#4b4b4b' },
+  { label: 'Development & Operations',  pct: 15, color: '#4b4b4b' },
 ];
 /* ================================================================ */
 
