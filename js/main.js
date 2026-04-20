@@ -6,7 +6,7 @@
 /* ================================================================
    TODO: Replace with your real contract address when deployed
    ================================================================ */
-const CONTRACT_ADDRESS = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+const CONTRACT_ADDRESS = 'EXo5MY6yVK5PnSS5PFCUZWWoxpz3sL9H9XtrAmjAGQ2j';
 
 /* ================================================================
    Tokenomics — edit percentages and labels here
